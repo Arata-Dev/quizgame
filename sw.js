@@ -1,16 +1,13 @@
-const version = 'v123';  // change this everytime you update the service worker
+const version = 'v1';  // change this everytime you update the service worker
                           // to force the browser to also update it.
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('my-cache').then(function(cache) {
       return cache.addAll([
-        '/',
         'index.html',
         'styles.css',
-        'script.js',
-        'icons/icon-192x192.png',
-        'icons/icon-512x512.png'
+        'script.js'
       ]);
     })
   );
