@@ -8,6 +8,17 @@ let round = 0;
 let percentage = 0;
 let questionsAsked = [];
 
+// load the service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }, function(error) {
+      console.log('Service Worker registration failed:', error);
+    });
+  });
+}
+
 window.onload = function() {
 
     document.getElementById("start").onclick = function () {
