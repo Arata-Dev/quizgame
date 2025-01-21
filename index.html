@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Quiz Game</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+    
+    <!-- include an external JavaScript file -->
+    <script src="script.js"></script>
+
+    <link rel='icon' href='q.png' type='image/x-icon'>
+
+    <link rel="manifest" href="manifest.json">
+  </head>
+  
+  <body>
+    <!-- page content -->
+    
+    <div id = "header">Quiz Game</div>
+
+    <div id = "display"></div>
+
+    <div id = "instructions">
+        You must answer 25 questions.
+        <br>
+        <br>
+        Every 5 questions, you reach a checkpoint. If your score is 80% or more at a checkpoint, you win. If your score is 40% or less at a checkpoint, you lose.
+        <br>
+        <br>
+        If your score is below 60% by the end, you lose.
+    </div>
+
+    <div id = "start-container">
+      <button id = "start">Start Game</button>
+    </div>
+
+    <div id = "next-container"></div>
+
+    <div id = "question"></div>
+
+    <div id = "img-container"></div>
+
+    <div id="main"></div>
+
+  </body>
+  
+</html>
