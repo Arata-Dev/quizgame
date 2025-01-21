@@ -36,7 +36,6 @@ async function fetchQuestions() {
 
         const response = await fetch(triviaAPIURL);
         const data = await response.json();
-        console.log(data);
         showQuestion(data);
 
     } catch(error) {
@@ -51,7 +50,6 @@ function showQuestion(data) {
 
     // update question/round number
     round++;
-    console.log("Round: " + round);
 
     // determine question to ask
     let questionNum = Math.floor(Math.random() * 25);
@@ -63,7 +61,6 @@ function showQuestion(data) {
     } // while
 
     questionsAsked.push(questionNum);
-    console.log("Question number: " + questionNum);
 
     document.getElementById("instructions").innerHTML = "";
     document.getElementById("display").innerHTML = "Question #" + round + "<br>Score: " + percentage + "%";
@@ -334,7 +331,6 @@ async function fetchImage(keyWords) {
         } // if
 
         const data = await response.json();
-        console.log(data);
 
         // add the image
         if (data.photos[0] != null && data.photos[0].src != null && data.photos[0].src.original != null) {
@@ -375,7 +371,6 @@ function revealAnswer(isCorrect, data, questionNum) {
 
     // display image
     let keyWords = getKeyWords(data, questionNum);
-    console.log(keyWords);
     fetchImage(keyWords);
     
     // disable all buttons
@@ -417,8 +412,6 @@ function revealAnswer(isCorrect, data, questionNum) {
 
     } // else if
 
-    console.log("Score: " + score);
-
     // create next button
     var elemContainer = document.getElementById("next-container");
     var elemNext = document.createElement("button");
@@ -448,8 +441,6 @@ function revealAnswer(isCorrect, data, questionNum) {
 } // revealAnswer
 
 function showCheckpoint(data) {
-
-    console.log(percentage + "%");
     
         if (percentage <= 40 || percentage >= 80) {
 
