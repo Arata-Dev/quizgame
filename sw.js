@@ -11,7 +11,15 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         'index.html',
         'style.css',
-        'script.js'
+        'script.js',
+        'icons/android-launchericon-144-144.png',
+        'icons/android-launchericon-192-192.png',
+        'icons/android-launchericon-48-48.png',
+        'icons/android-launchericon-512-512.png',
+        'icons/android-launchericon-72-72.png',
+        'icons/android-launchericon-96-96.png',
+        'icons/icon512_maskable.png',
+        'icons/icon512_rounded.png'
       ]);
     })
   );
@@ -29,7 +37,15 @@ self.addEventListener('fetch', function(event) {
 const STATIC_ASSETS = [ 
   'index.html',
   'style.css',
-  'script.js'
+  'script.js',
+  'icons/android-launchericon-144-144.png',
+  'icons/android-launchericon-192-192.png',
+  'icons/android-launchericon-48-48.png',
+  'icons/android-launchericon-512-512.png',
+  'icons/android-launchericon-72-72.png',
+  'icons/android-launchericon-96-96.png',
+  'icons/icon512_maskable.png',
+  'icons/icon512_rounded.png'
 ];
 
 // Install event: Cache static assets
