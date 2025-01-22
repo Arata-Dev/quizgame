@@ -38,6 +38,10 @@ button:disabled:hover {
     opacity: 1;
 }
 
+button:disabled {
+    color: #222222;
+}
+
 #next-container {
     text-align: center;  
 }
@@ -86,6 +90,10 @@ button:disabled:hover {
 
 #correct-option {
     background-color: #cccccc;
+}
+
+#correct-option:disabled {
+    border-width: 6px;
 }
 
 .incorrect-option {
