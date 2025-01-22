@@ -53,7 +53,7 @@ button:disabled {
 #start {
     width: 200px;
     background-color: #cccccc;
-    color: #c1292e;
+    border-color: #c1292e;
 }
 
 #next {
@@ -148,6 +148,7 @@ img {
 
 #installButton {
       background-color: #cccccc;
+      border-color: #292ec1; 
 }
 
 #install-container {
