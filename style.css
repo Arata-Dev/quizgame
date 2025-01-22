@@ -150,6 +150,10 @@ img {
       background-color: #a7c4c2;
 }
 
+#install-container {
+    display: inline-block;
+}
+
 @media screen and (min-width: 800px) {
 
     #instructions {
