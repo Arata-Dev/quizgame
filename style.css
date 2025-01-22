@@ -99,6 +99,7 @@ button:disabled:hover {
 
 .disabled-button {
     cursor: not-allowed;
+    color: #111111;
 }
 
 #question {
