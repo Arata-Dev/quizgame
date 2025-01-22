@@ -147,7 +147,7 @@ img {
 }
 
 #installButton {
-      background-color: #a7c4c2;
+      background-color: #cccccc;
 }
 
 #install-container {
@@ -190,7 +190,7 @@ img {
     }
 
     #install-container {
-        margin-left: 30%;
+        margin-left: 40%;
     }
 
 }
