@@ -151,7 +151,8 @@ img {
 }
 
 #install-container {
-    display: inline;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -186,6 +187,10 @@ img {
     #display {
         float: right;
         margin-right: 30%;
+    }
+
+    #install-container {
+        margin-left: 30%;
     }
 
 }
