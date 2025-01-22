@@ -1,5 +1,5 @@
-let triviaAPIURL = "https://opentdb.com/api.php?amount=50&type=multiple";
-// let triviaAPIURL = "questions.json";
+// let triviaAPIURL = "https://opentdb.com/api.php?amount=50&type=multiple";
+let triviaAPIURL = "questions.json";
 let pexelsAPIURL = "https://api.pexels.com/v1/search?per_page=1&query=";
 let pexelsAPIKey = "KeWg7MXEfustws2OQeyh3WLqWZqpj2IB7LAW2TbBYZTEI42bGZV1XT0i";
 
