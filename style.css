@@ -147,7 +147,8 @@ img {
 }
 
 #installButton {
-      background-color: #ffaa00;
+      margin-right: 20%;
+      background-color: #c1292e;
 }
 
 @media screen and (min-width: 800px) {
