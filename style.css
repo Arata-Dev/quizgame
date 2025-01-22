@@ -146,10 +146,9 @@ img {
     position: fixed;
 }
 
- installButton {
-      margin-left: auto;
-      margin-right: auto;
-  }
+#installButton {
+      background-color: #ffaa00;
+}
 
 @media screen and (min-width: 800px) {
 
