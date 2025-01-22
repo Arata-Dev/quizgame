@@ -150,10 +150,6 @@ img {
       background-color: #a7c4c2;
 }
 
-#install-container {
-    margin-left: 30%;
-}
-
 @media screen and (min-width: 800px) {
 
     #instructions {
