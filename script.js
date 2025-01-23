@@ -405,8 +405,6 @@ function revealAnswer(isCorrect, data, questionNum) {
 
     document.getElementById("arrow").innerHTML = "";
     var elemDisplay = document.getElementById("display");
-    elemDisplay.innerHTML = "";
-    elemDisplay.style.marginTop = "0px";
 
     // display image
     let keyWords = getKeyWords(data, questionNum);
