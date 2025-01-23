@@ -157,10 +157,6 @@ img {
       border-color: #292ec1; 
 }
 
-#install-container {
-    margin-left: 30%;
-}
-
 @media screen and (min-width: 800px) {
 
     #instructions {
@@ -193,10 +189,6 @@ img {
     #display {
         float: right;
         margin-right: 30%;
-    }
-
-    #install-container {
-        margin-left: 45%;
     }
 
 }
