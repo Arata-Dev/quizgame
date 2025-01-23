@@ -61,6 +61,12 @@ button:disabled {
     background-color: #cccccc;
 }
 
+#restart {
+    width: 200px;
+    background-color: #cccccc;
+    color: #c1292e;
+}
+
 #instructions {
     margin-left: 20px;
     margin-right: 20px;
