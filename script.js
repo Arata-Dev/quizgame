@@ -45,24 +45,17 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 window.onload = function() {
 
-    document.getElementById("start").onclick = function () {
-        resetGame();
+    // create start button
+    var elemStart = document.createElement("button");
+    elemStart.setAttribute("id", "start");
+    elemStart.innerHTML = "Start";
+    document.getElementById("start-container").appendChild(elemStart);
+
+    elemStart.onclick = function () {
+        fetchQuestions();
     };
 
 } // window.onload
-
-function resetGame() {
-
-    score = 0;
-    round = 0;
-    percentage = 0;
-    questionsAsked.length = 0;
-
-    document.getElementById("display").style.color = "#111111";
-
-    fetchQuestions();
-
-} // resetGame
 
 // fetch questions and answers from open trivia db
 async function fetchQuestions() {
@@ -107,12 +100,24 @@ function showQuestion(data) {
     var elemOptions = document.createElement("div");
     var elemMain = document.getElementById("main");
     var elemContainer = document.getElementById("next-container");
+    var elemStartContainer = document.getElementById("start-container");
     var elemDisplay = document.getElementById("display");
     elemDisplay.style.marginTop = "28px";
     elemMain.innerHTML = "";
     elemContainer.innerHTML = "";
+    elemStartContainer.innerHTML = "";
     document.getElementById("img-container").innerHTML = "";
 
+    // create restart button
+    var elemRestart = document.createElement("button");
+    elemRestart.setAttribute("id", "restart");
+    elemRestart.innerHTML = "Reset";
+    elemContainer.appendChild(elemRestart);
+
+    elemRestart.onclick = function () {
+        resetGame();
+    };
+	
     var elemArrow = document.createElement("div");
     elemArrow.setAttribute("id", "arrow");
     elemArrow.innerHTML = "&uarr;<br>&darr;";
@@ -416,7 +421,7 @@ function revealAnswer(isCorrect, data, questionNum) {
     } // for
 
     // enable restart button
-    document.getElementById("start").disabled = false;
+    document.getElementById("restart").disabled = false;
     
     // change border color
     document.getElementById("correct-option").style.borderColor = "#3ec300";
@@ -552,3 +557,33 @@ function showCheckpoint(data) {
     } // if
 
 } // showCheckpoint
+
+function resetGame() {
+
+    score = 0;
+    round = 0;
+    percentage = 0;
+    questionsAsked.length = 0;
+
+    document.getElementById("display").style.color = "#111111";
+
+    document.getElementById("display").innerHTML = "";
+    document.getElementById("start-container").innerHTML = "";
+    document.getElementById("next-container").innerHTML = "";
+    document.getElementById("question").innerHTML = "";
+    document.getElementById("img-container").innerHTML = "";
+    document.getElementById("main").innerHTML = "";
+    
+    // create start button
+    var elemStart = document.createElement("button");
+    elemStart.setAttribute("id", "start");
+    elemStart.innerHTML = "Start";
+    document.getElementById("start-container").appendChild(elemStart);
+
+    elemStart.onclick = function () {
+        fetchQuestions();
+    };
+
+    document.getElementById("instructions").innerHTML = "You must answer 25 questions.<br><br>Every 5 questions, you reach a checkpoint. If your score is 80% or more at a checkpoint, you win. If your score is 40% or less at a checkpoint, you lose.<br><br>If your score is below 60% by the end, you lose.";
+
+} // resetGame
