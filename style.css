@@ -64,7 +64,7 @@ button:disabled {
 #restart {
     width: 200px;
     background-color: #cccccc;
-    color: #c1292e;
+    border-color: #c1292e;
 }
 
 #instructions {
