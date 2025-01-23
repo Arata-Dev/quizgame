@@ -593,6 +593,7 @@ function resetGame() {
         fetchQuestions();
     };
 
+    document.body.style.backgroundImage = "none";
     document.getElementById("instructions").innerHTML = "You must answer 25 questions.<br><br>Every 5 questions, you reach a checkpoint. If your score is 80% or more at a checkpoint, you win. If your score is 40% or less at a checkpoint, you lose.<br><br>If your score is below 60% by the end, you lose.";
 
 } // resetGame
