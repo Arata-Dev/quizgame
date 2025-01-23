@@ -517,7 +517,7 @@ function showCheckpoint(data) {
 	    var elemRestart = document.createElement("button");
 	    elemRestart.setAttribute("id", "restart");
 	    elemRestart.innerHTML = "Reset";
-	    elemContainer.appendChild(elemRestart);
+	    document.getElementById("next-container").appendChild(elemRestart);
 	
 	    elemRestart.onclick = function () {
 	        resetGame();
