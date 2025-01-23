@@ -92,7 +92,6 @@ function showQuestion(data) {
 
     document.getElementById("instructions").innerHTML = "";
     document.getElementById("display").innerHTML = "Question #" + round + "<br>Score: " + percentage + "%";
-    document.getElementById("start").innerHTML = "Restart"
     document.getElementById("question").innerHTML = data.results[questionNum].question;
     document.body.style.backgroundColor = "#eeeeee";
     document.body.style.backgroundImage = "none";
