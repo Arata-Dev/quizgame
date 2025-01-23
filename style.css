@@ -50,6 +50,10 @@ button:disabled {
     text-align: center;
 }
 
+#install-container {
+    text-align: center;
+}
+
 #start {
     width: 200px;
     background-color: #cccccc;
@@ -66,6 +70,12 @@ button:disabled {
     background-color: #cccccc;
     border-color: #c1292e;
 }
+
+#installButton {
+      background-color: #cccccc;
+      border-color: #292ec1; 
+}
+
 
 #instructions {
     margin-left: 20px;
@@ -152,10 +162,6 @@ img {
     position: fixed;
 }
 
-#installButton {
-      background-color: #cccccc;
-      border-color: #292ec1; 
-}
 
 @media screen and (min-width: 800px) {
 
