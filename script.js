@@ -512,6 +512,16 @@ function showCheckpoint(data) {
             } // else if
 
             elemMain.appendChild(elemFinal);
+
+	    // create restart button
+	    var elemRestart = document.createElement("button");
+	    elemRestart.setAttribute("id", "restart");
+	    elemRestart.innerHTML = "Reset";
+	    elemContainer.appendChild(elemRestart);
+	
+	    elemRestart.onclick = function () {
+	        resetGame();
+	    };
     
         } // if
 
@@ -552,16 +562,6 @@ function showCheckpoint(data) {
         } // else if
 
         elemMain.appendChild(elemFinal);
-
-	// create restart button
-	    var elemRestart = document.createElement("button");
-	    elemRestart.setAttribute("id", "restart");
-	    elemRestart.innerHTML = "Reset";
-	    elemContainer.appendChild(elemRestart);
-	
-	    elemRestart.onclick = function () {
-	        resetGame();
-	    };
 
     } // if
 
