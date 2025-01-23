@@ -191,4 +191,8 @@ img {
         margin-right: 30%;
     }
 
+    #install-container {
+        float: left;
+    }
+
 }
