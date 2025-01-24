@@ -95,6 +95,7 @@ function showQuestion(data) {
     document.getElementById("question").innerHTML = data.results[questionNum].question;
     document.body.style.backgroundColor = "#eeeeee";
     document.body.style.backgroundImage = "none";
+    document.getElementById("install-container").innerHTML = "";
 
     var elemOptions = document.createElement("div");
     var elemMain = document.getElementById("main");
@@ -417,7 +418,7 @@ function revealAnswer(isCorrect, data, questionNum) {
         button.disabled = true;
     } // for
 
-    // enable restart and install buttons
+    // enable restart button
     document.getElementById("restart").disabled = false;
     document.getElementById("installButton").disabled = false;
     
