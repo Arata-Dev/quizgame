@@ -95,7 +95,6 @@ function showQuestion(data) {
     document.getElementById("question").innerHTML = data.results[questionNum].question;
     document.body.style.backgroundColor = "#eeeeee";
     document.body.style.backgroundImage = "none";
-    document.getElementById("installButton").disabled = false;
 
     var elemOptions = document.createElement("div");
     var elemMain = document.getElementById("main");
