@@ -201,4 +201,8 @@ img {
         float: left;
     }
 
+    #installButton {
+        margin: 20px;
+    }
+
 }
