@@ -352,6 +352,7 @@ function isAlphaNumeric(str) {
     return true;
 
 } // isAlphaNumeric
+// stack code ends
 
 // fetch image from pexels API
 // code: https://mdinfotech.net/?course=webdev&unit=6
@@ -417,6 +418,7 @@ function revealAnswer(isCorrect, data, questionNum) {
     for (const button of buttons) {
         button.disabled = true;
     } // for
+    // stack code ends
 
     // enable restart button
     document.getElementById("restart").disabled = false;
@@ -447,6 +449,7 @@ function revealAnswer(isCorrect, data, questionNum) {
             } // if
     
         } // for
+	// stack code ends
 
     } // else if
 
