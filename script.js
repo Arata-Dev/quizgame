@@ -500,7 +500,6 @@ function showCheckpoint(data) {
 
                 elemFinal.innerHTML += "<br>You lose.";
                 document.body.style.backgroundImage = "linear-gradient(to bottom right, #dd2222, #770000)";
-		document.getElementById("main").style.backgroundImage = "linear-gradient(to bottom right, #dd2222, #770000)";
 
             } // if
 
@@ -508,7 +507,6 @@ function showCheckpoint(data) {
     
                 elemFinal.innerHTML += "<br>You win.";
                 document.body.style.backgroundImage = "linear-gradient(to bottom right, #88ff88, #229922)";
-		document.getElementById("main").style.backgroundImage = "linear-gradient(to bottom right, #88ff88, #229922)";
         
             } // else if
 
