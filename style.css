@@ -74,6 +74,7 @@ button:disabled {
 #installButton {
       background-color: #cccccc;
       border-color: #292ec1;
+    margin: 0 auto;
 }
 
 
