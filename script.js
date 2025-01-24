@@ -68,7 +68,6 @@ async function fetchQuestions() {
 
     } catch(error) {
 
-        // console.error('Error fetching questions: ', error);
 	alert("Error fetching questions.");
 
     } // catch
