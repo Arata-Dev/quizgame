@@ -420,7 +420,6 @@ function revealAnswer(isCorrect, data, questionNum) {
 
     // enable restart button
     document.getElementById("restart").disabled = false;
-    document.getElementById("installButton").disabled = false;
     
     // change border color
     document.getElementById("correct-option").style.borderColor = "#3ec300";
