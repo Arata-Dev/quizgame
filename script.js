@@ -66,10 +66,10 @@ async function fetchQuestions() {
         const data = await response.json();
         showQuestion(data);
 
-    } catch(error) {
+    } catch() {
 
         // console.error('Error fetching questions: ', error);
-	alert("Error fetching questions: ", error);
+	alert("Error fetching questions.");
 
     } // catch
 
